@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-grid"></div>
+    
+    <div class="arc-reactor">
+        <div class="ring ring1"></div>
+        <div class="ring ring2"></div>
+        <div class="ring ring3"></div>
+        <div class="core"></div>
+    </div>
+
+    <div class="calculator">
+
+    <div class="header">
+        <div class="title">J.A.R.V.I.S</div>
+        <div id="clock"></div>
+    </div>
+
+    <input type="text" id="display" readonly>
+
+    <button id="voiceBtn" class="voice-btn">
+        🎤 Voice Command
+    </button>
+
+    <div class="buttons">
+
+        <button onclick="clearDisplay()">AC</button>
+        <button onclick="deleteLast()">⌫</button>
+        <button class="operator" onclick="appendValue('%')">%</button>
+        <button class="operator" onclick="appendValue('/')">÷</button>
+
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button class="operator" onclick="appendValue('*')">×</button>
+
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button class="operator" onclick="appendValue('-')">−</button>
+
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button class="operator" onclick="appendValue('+')">+</button>
+
+        <button class="zero" onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button class="equal" onclick="calculate()">=</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:
+    radial-gradient(circle at top,#0f172a,#020617);
+}
+
+.calculator{
+    width:420px;
+    padding:25px;
+    border-radius:30px;
+
+    
+    position:relative;
+    z-index:10;
+
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(0,255,255,0.2);
+
+    box-shadow:
+    0 0 30px rgba(0,255,255,.15);
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.title{
+    color:#00ffff;
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+#clock{
+    color:white;
+    font-size:0.9rem;
+}
+
+#display{
+    width:100%;
+    height:90px;
+
+    background:rgba(255,255,255,.03);
+
+    border:none;
+
+    border-radius:20px;
+
+    color:white;
+
+    text-align:right;
+
+    font-size:2.5rem;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    outline:none;
+}
+
+.voice-btn{
+    width:100%;
+    height:50px;
+
+    margin-bottom:20px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:rgba(0,255,255,.12);
+
+    color:#00ffff;
+
+    cursor:pointer;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+button{
+    height:65px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.06);
+
+    color:white;
+
+    font-size:1.2rem;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+
+    background:rgba(0,255,255,.18);
+}
+
+.operator{
+    color:#00ffff;
+}
+
+.equal{
+    background:#00ffff;
+    color:black;
+    font-weight:bold;
+}
+
+.zero{
+    grid-column:span 2;
+}
